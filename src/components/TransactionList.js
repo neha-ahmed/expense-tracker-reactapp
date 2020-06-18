@@ -7,7 +7,10 @@ function TransactionList(){
 
     return(
         <div>
-        <h3>History</h3>
+        <h3>History
+        <button className="deletex">Delete All</button>
+      
+        </h3>
         <ul className="list">
           {transactions.map(transaction => (
            <Transaction transaction={transaction} key = {transaction.id}/>

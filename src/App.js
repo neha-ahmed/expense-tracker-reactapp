@@ -11,8 +11,10 @@ import './App.css';
 function App() {
   return (
     <GlobalProvider >
-    <Header/>
+   
      <div className="container">
+     <Header/>
+     <br />
        <Balance />
        <IncomeExpense/>
        <TransactionList/>

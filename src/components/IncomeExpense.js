@@ -18,13 +18,13 @@ function IncomeExpense(){
 
     return(
         <div className="inc-exp-container">
-        <div>
+        <div className="col">
           <h4>Income</h4>
-          <p className="money plus">{income}</p>
+          <p className="money plus">${income}</p>
         </div>
-        <div>
+        <div className="col">
           <h4>Expense</h4>
-          <p className="money minus">{expense}</p>
+          <p className="money minus">${expense}</p>
         </div>
       </div>
     );
