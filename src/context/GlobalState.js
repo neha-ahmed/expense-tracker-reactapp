@@ -23,12 +23,18 @@ export const GlobalProvider = ({children}) => {
             payload: transaction
         });
     }
+    function deleteAll (){
+        dispatch({
+            type: 'DELETE_ALL'
+        });
+    }
     return (
     <GlobalContext.Provider
         value ={{
             transactions : state.transactions,
             deleteTransaction,
-            addTransaction
+            addTransaction,
+            deleteAll
         }}
     >
         {children}

@@ -7,6 +7,10 @@ export default (state, action) => {
                     transaction =>
                     transaction.id !== action.payload)
             }
+            case 'DELETE_ALL':
+                return{
+                    transactions:[]
+                }
             case 'ADD_TRANSACTION':
             return{
                 ...state,

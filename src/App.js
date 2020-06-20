@@ -12,7 +12,7 @@ function App() {
   return (
     <GlobalProvider >
    
-     <div className="container">
+     <div className="container" style={{width:"100%"}}>
      <Header/>
      <br />
        <Balance />

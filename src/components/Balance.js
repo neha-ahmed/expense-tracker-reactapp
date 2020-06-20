@@ -4,8 +4,8 @@ import {GlobalContext} from '../context/GlobalState';
 function Balance(){
   const {transactions} = useContext(GlobalContext);
  
-  const amounts = transactions.map(transaction => transaction.amount);
-  const total = amounts.reduce((acc, item) => (acc+=item) ,0 ).toFixed(2);
+  var amounts = transactions.map(transaction => transaction.amount);
+  var total = amounts.reduce((acc, item) => (acc+=item) ,0 ).toFixed(2);
   const sign = total <0 ? '-' : '+';
   
     return(
