@@ -5,10 +5,10 @@ function Transaction({transaction}){
     const sign = transaction.amount <0 ? '-' : '+';
     const {deleteTransaction} = useContext(GlobalContext);
     return(
-        <div className="row">
+     
         <div >
             
-                <li className={ transaction.amount <0 ?'minus':'plus' } style={{width: "600%"}}>
+                <li className={ transaction.amount <0 ?'minus':'plus' } style={{width: "90%"}}>
 
                     {transaction.text} 
                     <span> {sign}${Math.abs(transaction.amount)} </span>
@@ -19,7 +19,7 @@ function Transaction({transaction}){
                     </li> 
          
         </div>
-        </div>
+      
     );
 
 }
