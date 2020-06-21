@@ -40,8 +40,8 @@ function AddTransaction(){
          <h3>Add income</h3>
       <form onSubmit={onIncomeSubmit}>
        
-          <label htmlFor="text">Text</label>
-          <input type="text" value={textIncome} onChange= {(e)=> setIncomeText(e.target.value)} placeholder="Enter text..." />
+          <label htmlFor="text">Details</label>
+          <input type="text" value={textIncome} onChange= {(e)=> setIncomeText(e.target.value)} placeholder="Enter description" />
        
           <label htmlFor="amount"
             >Add Amount <br />
@@ -56,8 +56,8 @@ function AddTransaction(){
       <h3>Add expense</h3>
       <form onSubmit={onExpenseSubmit}>
         
-          <label htmlFor="text">Text</label>
-          <input type="text" value={textExpense} onChange= {(e)=> setExpenseText(e.target.value)} placeholder="Enter text..." />
+          <label htmlFor="text">Details</label>
+          <input type="text" value={textExpense} onChange= {(e)=> setExpenseText(e.target.value)} placeholder="Enter description" />
         
           <label htmlFor="amount"
             >Add Amount <br />

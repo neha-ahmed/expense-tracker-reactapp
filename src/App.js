@@ -19,6 +19,8 @@ function App() {
        <IncomeExpense/>
        <AddTransaction/>
        <TransactionList/>
+       <hr/>
+       <div><span style={{marginLeft:"160px"}}>Made by Neha Ahmed</span></div>
      </div>
     </GlobalProvider>
   );

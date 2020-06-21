@@ -179,7 +179,7 @@ input[type='number'] {
   left:100%;
   font-size: 13px;
   margin-left: 300px;
-  border: none;
+  border: 0;
   background-color: #eee4d7;
 }
 .deletex:hover{
